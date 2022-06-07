@@ -1,0 +1,22 @@
+{
+  "name": "nmp-work",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeyno12/nmp-work.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeyno12/nmp-work/issues"
+  },
+  "homepage": "https://github.com/zeyno12/nmp-work#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}

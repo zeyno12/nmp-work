@@ -1,0 +1,140 @@
+#navbar{
+    padding: 2%;
+    .lists{
+        ul{
+            @include flex1 (space-between,center);
+            li{
+                list-style: none;
+                cursor: pointer;
+            }
+            p{
+                margin: 0;
+                cursor: pointer;
+            }
+            .az{
+            background: $secondcolor;
+            border-radius: 35px;
+            padding: 0.7% 2%;
+            }
+            .sari{
+                border-radius: 50%;
+                background:$maincolor;
+                padding: 9px 11px 13px 10px;
+               @include flex1(center,center)
+            }
+        }
+    }
+}
+#header{
+   background:$secondcolor;
+   padding: 3%;
+   border-radius: 30px;
+   width: $wight9;
+   margin: auto;
+    .head-1{
+        .button-1{
+            button{
+            background-color:$blackkk;
+            @include zeynab(white,none,40px,4px 30px 4px 30px);
+            }
+        }
+        .bigtext1{
+            h1{
+                font-weight: $font7;
+                font-size: 60px;
+                width:$wight7;
+            }
+        }
+        .smalltext1{
+            p{
+                font-size: small;
+                width: $wight7;
+            }
+        }
+        .foothead{
+            @include flex1(space-around,center);
+            width: $wight7;
+            .button-2{
+                button{
+                    background-color: $maincolor;
+                    @include zeynab($blackkk,none,40px,10px 25px 10px 25px);
+                }
+            }
+            .textfoot{
+                font-size: small;
+                p{
+                    margin: 0;
+                }
+             .grayt{
+                color:$blackkk;
+            }
+            .redt{
+                color: red;
+            }   
+            }
+        }
+    }
+    .aside{
+        .asideimg{
+            img{
+                @include img(400px,400px,10px,cover);
+            }
+        }
+        .iconaside{
+            ul{
+                @include flex1(space-around,center);
+                width: $wight6;
+                li{
+                    list-style: none;
+
+                }
+            }
+        }
+    }
+}
+#main1{
+    padding: 5%;
+.textmain{
+    width:$wight6;
+
+  .biggg{
+    font-size: 30px;
+    font-weight: $font6;
+  }  
+  p{
+      font-size: 20px;
+  }
+}
+.mbuttons{
+    width: 40%;
+    button{
+        @include button(inherit,50px,6px 12px 6px 12px,12px);
+        span{
+            font-size: small;
+            font-weight: $font6;
+        }
+        
+    }
+    .yellow{
+        background-color: $maincolor;
+        border: none;
+    }
+}
+.border1000{
+   @include bor1000(1px solid,15px,center,space-around);
+   .yellowb{
+       color:$maincolor;
+       font-size: 40px;
+       font-weight: $font7;
+   }
+}
+}
+#main2{
+    .con{
+        img{
+            width: $wight9;
+            padding: 5%;
+            object-fit: cover;
+        }
+    }
+}
