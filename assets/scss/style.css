@@ -45,6 +45,24 @@
           align-items: center;
 }
 
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #navbar .lists ul {
+    display: none;
+  }
+  #navbar .logo img {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  #navbar .lists ul {
+    display: none;
+  }
+  #navbar .logo img {
+    padding: 10px;
+  }
+}
+
 #header {
   background: #F3F3F3;
   padding: 3%;
@@ -59,17 +77,6 @@
   border: none;
   border-radius: 40px;
   padding: 4px 30px 4px 30px;
-}
-
-#header .head-1 .bigtext1 h1 {
-  font-weight: 700;
-  font-size: 60px;
-  width: 70%;
-}
-
-#header .head-1 .smalltext1 p {
-  font-size: small;
-  width: 70%;
 }
 
 #header .head-1 .foothead {
@@ -106,6 +113,23 @@
 
 #header .head-1 .foothead .textfoot .redt {
   color: red;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #header .head-1 .button-1 button {
+    width: 306px;
+  }
+  #header .head-1 .button-1 button svg {
+    width: 40px;
+    padding: 5px;
+  }
+  #header .head-1 .bigtext1 h1 {
+    text-align: center;
+  }
+  #header .head-1 .textfoot p {
+    padding-left: 40px;
+    text-align: center;
+  }
 }
 
 #header .aside .asideimg img {
@@ -181,6 +205,16 @@
   font-size: 20px;
 }
 
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main1 .textmain {
+    text-align: center;
+    margin: auto;
+  }
+  #main1 .textmain .biggg {
+    width: 244px;
+  }
+}
+
 #main1 .mbuttons {
   width: 40%;
 }
@@ -202,6 +236,12 @@
   border: none;
 }
 
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main1 .mbuttons {
+    margin: auto;
+  }
+}
+
 #main1 .border1000 {
   border: 1px solid;
   border-radius: 15px;
@@ -219,6 +259,18 @@
   color: #FFC700;
   font-size: 40px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main1 .border1000 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #main1 .border1000 .ucuncu {
+    margin-left: 35px;
+  }
 }
 
 #main2 .con img {
@@ -279,6 +331,12 @@
   margin: 0;
 }
 
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main4 .salam {
+    margin-right: 60px;
+  }
+}
+
 #main5 {
   margin-top: 4rem;
 }
@@ -294,6 +352,13 @@
 
 #main5 .maintext5 span {
   font-size: large;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main5 .maintext5 {
+    text-align: center;
+    margin: auto;
+  }
 }
 
 #main5 .container {
@@ -351,6 +416,12 @@
   right: 200px;
 }
 
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main5 .container {
+    display: none;
+  }
+}
+
 #main6 .maintext6 {
   margin-left: 60px;
 }
@@ -358,6 +429,13 @@
 #main6 .maintext6 p {
   font-size: 40px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main6 .maintext6 {
+    text-align: center;
+    margin: auto;
+  }
 }
 
 #main6 .flexcontainer {
@@ -429,17 +507,13 @@
           align-items: center;
   margin: auto;
   padding: auto;
-}
-
-#main7 .container7 {
   border-radius: 20px;
   background-color: #262626;
-  width: 23%;
   padding: 4px 8px;
   margin: auto;
 }
 
-#main7 .container7 .flex7 {
+#main7 .flex7 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,7 +522,7 @@
           align-items: center;
 }
 
-#main7 .container7 .flex7 .icon7 {
+#main7 .flex7 .icon7 {
   background-color: #FFC700;
   border-radius: 77px;
   display: -webkit-box;
@@ -460,26 +534,51 @@
   padding: 9px;
 }
 
-#main7 .container7 .flex7 .textcol7 {
+#main7 .flex7 .textcol7 {
   font-size: small;
   padding: 8px;
   color: #fff;
 }
 
-#main7 .container7 .flex7 .textcol7 span {
+#main7 .flex7 .textcol7 span {
   font-weight: 700;
 }
 
-#main7 .container7 .flex7 .textcol7 span p {
+#main7 .flex7 .textcol7 span p {
   margin: 0;
 }
 
-#main7 .container7 .text7 {
+#main7 .text7 {
   color: white;
 }
 
-#main7 .container7 .text7 p {
+#main7 .text7 p {
   font-size: 12px;
+}
+
+#main7 .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#main7 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#main7 .swiper-slide img {
+  width: 100%;
+  height: 100%;
 }
 
 #main8 {
@@ -524,6 +623,21 @@
   font-weight: 600;
 }
 
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main8 .text8 .big {
+    font-size: x-large;
+    margin: auto;
+    text-align: center;
+  }
+  #main8 .text8 p {
+    text-align: center;
+  }
+  #main8 .text8 button {
+    width: 215px;
+    margin: 15px;
+  }
+}
+
 #main9 .text9 {
   margin-left: 60px;
   width: 40%;
@@ -536,10 +650,38 @@
   font-weight: 700;
 }
 
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main9 .text9 {
+    text-align: center;
+    margin: auto;
+  }
+  #main9 .text9 .big9 {
+    font-size: x-large;
+  }
+  #main9 .text9 p {
+    font-size: smaller;
+  }
+}
+
 #main9 .img9 img {
   width: 70%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #main9 .img9 {
+    margin-bottom: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #main9 .img9 img {
+    width: 60%;
+  }
 }
 
 footer {
@@ -565,6 +707,19 @@ footer {
   font-weight: 600;
 }
 
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #form .lefttext {
+    margin: auto;
+  }
+  #form .lefttext p {
+    text-align: center;
+    font-size: smaller;
+  }
+  #form .lefttext .bold {
+    font-size: x-large;
+  }
+}
+
 #form .rightform form {
   margin-top: 2rem;
 }
@@ -587,6 +742,12 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #form .rightform form input {
+    width: 100%;
+  }
 }
 
 #form .rightform form .uzun {
@@ -621,6 +782,15 @@ footer {
   font-size: 8px;
   width: 50%;
   margin-left: 10px;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #form .rightform .end button {
+    margin: 10px;
+  }
+  #form .rightform .end p {
+    width: 110px;
+  }
 }
 
 #listfooter {
@@ -661,6 +831,12 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   width: 70%;
+}
+
+@media screen and (min-width: 390px) and (max-width: 414px) {
+  #listfooter .adres .iconad svg {
+    margin-right: 15px;
+  }
 }
 
 #listfooter .icon ul {

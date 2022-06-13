@@ -24,6 +24,32 @@
             }
         }
     }
+  
+    @media screen and (min-width: 390px) and (max-width: 414px) {
+        .lists{
+            ul{
+    display: none;
+            }
+        }
+        .logo{
+            img{
+                padding: 10px;
+            }
+        }
+    }
+    @media screen and (min-width: 414px) and (max-width: 768px) {
+        .lists{
+            ul{
+    display: none;
+            }
+        }
+        .logo{
+            img{
+                padding: 10px;
+            }
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {}
 }
 #header{
    background:$secondcolor;
@@ -38,19 +64,6 @@
             @include zeynab(white,none,40px,4px 30px 4px 30px);
             }
         }
-        .bigtext1{
-            h1{
-                font-weight: $font7;
-                font-size: 60px;
-                width:$wight7;
-            }
-        }
-        .smalltext1{
-            p{
-                font-size: small;
-                width: $wight7;
-            }
-        }
         .foothead{
             @include flex1(space-around,center);
             width: $wight7;
@@ -59,6 +72,7 @@
                     background-color: $maincolor;
                     @include zeynab($blackkk,none,40px,10px 25px 10px 25px);
                 }
+
             }
             .textfoot{
                 font-size: small;
@@ -73,6 +87,30 @@
             }   
             }
         }
+    }
+    @media screen and (min-width: 390px) and (max-width: 414px) {
+        .head-1{
+            .button-1{
+                button{
+                 width:306px;
+                 svg{
+                     width: 40px;
+                     padding: 5px;
+                 }
+                }
+              }
+              .bigtext1{
+                h1{
+                    text-align: center
+                }
+              }
+              .textfoot{
+                p{
+                    padding-left: 40px;
+                    text-align: center;
+                }
+              }
+        }   
     }
     .aside{
         .asideimg{
@@ -96,12 +134,10 @@
             width: 100%;
             height: 100%;
           }
-    
           .swiper-slide {
             text-align: center;
             font-size: 18px;
             background: #fff;
-    
             /* Center slide text vertically */
             display: -webkit-box;
             display: -ms-flexbox;
@@ -139,6 +175,15 @@
       font-size: 20px;
   }
 }
+@media screen and (min-width: 390px) and (max-width: 414px){
+    .textmain{
+        text-align: center;
+        margin: auto;
+        .biggg{
+            width: 244px;
+        }
+    }
+}
 .mbuttons{
     width: 40%;
     button{
@@ -154,6 +199,11 @@
         border: none;
     }
 }
+@media screen and (min-width: 390px) and (max-width: 414px){
+   .mbuttons{
+    margin: auto
+   }
+}
 .border1000{
    @include bor1000(1px solid,15px,center,space-around);
    .yellowb{
@@ -161,6 +211,14 @@
        font-size: 40px;
        font-weight: $font7;
    }
+}
+@media screen and (min-width: 390px) and (max-width: 414px){
+    .border1000{
+        flex-direction: column;
+        .ucuncu{
+            margin-left: 35px;
+        }
+    }
 }
 }
 #main2{
@@ -208,6 +266,11 @@
             margin: 0;
         }
     }
+  @media screen and (min-width: 390px) and (max-width: 414px){
+    .salam{
+        margin-right: 60px;
+    }
+}  
 }
 #main5{
     margin-top: 4rem;
@@ -219,6 +282,12 @@
         }
         span{
             font-size: large;
+        }
+    }
+    @media screen and (min-width: 390px) and (max-width: 414px){
+        .maintext5{
+            text-align: center;
+            margin: auto;
         }
     }
     .container{
@@ -263,6 +332,11 @@
             right: 200px;
         }
     }
+    @media screen and (min-width: 390px) and (max-width: 414px){
+        .container{
+            display: none;
+        }
+    }
 }
 #main6{
     .maintext6{
@@ -270,6 +344,12 @@
         p{
             font-size: 40px;
             font-weight: $font7;
+        }
+    }
+    @media screen and (min-width: 390px) and (max-width: 414px){
+        .maintext6{
+            text-align: center;
+        margin: auto;
         }
     }
     .flexcontainer{
@@ -329,13 +409,13 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: auto;
-    .container7{
-        border-radius: 20px;
+    padding: auto;  border-radius: 20px;
         background-color: $blackkk;
-        width: 23%;
+      
         padding: 4px 8px;
         margin: auto;
+    
+      
        .flex7{
         display: flex;
         align-items: center;
@@ -350,6 +430,7 @@
     font-size: small;
     padding: 8px;
     color: #fff;
+    
     span{
         font-weight: $font7;
       
@@ -366,7 +447,38 @@
         font-size: 12px;
     }
 }
-    }
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    
+    width: 100%;
+    height: 100%;
+   
+  }
+    
 }
 #main8{
     margin: 3%;
@@ -400,6 +512,22 @@
             }
         }
     }
+    @media screen and (min-width: 390px) and (max-width: 414px){
+    .text8{
+        .big{
+            font-size: x-large;
+            margin: auto;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            width: 215px;
+            margin: 15px;
+        }
+    }
+    }
 }
 #main9{
     .text9{
@@ -412,10 +540,32 @@
             font-weight: $font7;
         }
     }
+    @media screen and (min-width: 390px) and (max-width: 414px){
+        .text9{
+            text-align: center;
+            margin: auto;
+            .big9{
+                font-size: x-large;
+            }
+            p{
+                font-size: smaller;
+            }
+        }
+    }
     .img9{
         img{
             width: 70%;
             object-fit: cover;
+        }
+    }
+    @media screen and (min-width: 390px) and (max-width: 414px){
+        .img9{
+            margin-bottom: 45px;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 60%;
+            }
         }
     }
 }
@@ -437,6 +587,18 @@ footer{
             font-weight: $font6;
         }
     }
+    @media screen and (min-width: 390px) and (max-width: 414px){
+        .lefttext{
+            p{
+                text-align: center;
+                font-size: smaller;
+            }
+            .bold{
+                font-size: x-large;
+            }
+            margin: auto;
+        }
+    }
     .rightform{
         form{
             margin-top: 2rem;
@@ -450,6 +612,11 @@ footer{
                align-items: center;
                justify-content: space-between;
                
+            }
+            @media screen and (min-width: 390px) and (max-width: 414px){
+                    input{
+                        width: 100%;
+                    }   
             }
             .uzun{
                 height: 120px;
@@ -469,14 +636,27 @@ footer{
                     font-weight: $font7;
                 }
             }
+            
             p{
                 font-size: 8px;
                 width: 50%;
                 margin-left: 10px;
             }
         }
+        @media screen and (min-width: 390px) and (max-width: 414px){
+            .end{
+                button{
+                    margin: 10px;
+                }
+                p{
+                    width: 110px;
+                }
+            }    
+            }
     }
+  
 }
+
 #listfooter{
     color: white;
     margin-top: 5rem;
@@ -498,6 +678,15 @@ footer{
         justify-content: space-between;
         align-items: center;
         width: 70%;
+    }
+    @media screen and (min-width: 390px) and (max-width: 414px){
+        .adres{
+            .iconad{
+                svg{
+                    margin-right: 15px;
+                }
+            }
+        }
     }
     .icon{
         ul{
